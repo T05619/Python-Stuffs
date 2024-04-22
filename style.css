@@ -403,13 +403,13 @@ header ul li a:hover:after {
     }
     
     #information {
-        padding-top: 100%;
+        padding-top: 140%;
     }
 }
 
 @media (max-width: 350px) {
     #information {
-        padding-top: 130%;
+        padding-top: 150%;
     }
 }
 
