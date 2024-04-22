@@ -390,7 +390,7 @@ header ul li a:hover:after {
     }
 }
 
-@media (max-width: 375px) {
+@media (max-width: 415px) {
     #topContainer h2 {
         padding-left: 10%;
         padding-top: 40%;
