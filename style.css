@@ -1,0 +1,420 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Raleway', sans-serif;
+}
+
+html {
+    font-size: 10px;
+}
+
+body {
+    background-color: #1b1e20;
+}
+
+header {
+    overflow: hidden;
+    height: 100px;
+    width: 100%;
+    background-color: #161a1d;
+}
+
+header div {
+    position: relative;
+    top: -1.5rem;
+    left: -1rem;
+    overflow: hidden;
+    height: 120px;
+}
+
+header div img {
+    height: 120px;
+}
+
+header h1 {
+    position: relative;
+    font-size: 400%;
+    color: white;
+    top: 30%;
+    left: 2%;
+}
+
+header span {
+    position: relative;
+    top: 2px;
+    width: 1px;
+    height: 10px;
+    background-color: white;
+    border: 1.5px white solid;
+    margin: 0 30px;
+}
+
+header ul {
+    position: relative;
+    right: 10px;
+}
+
+header ul li{
+    position: relative;
+    top: -87px;
+    right: 20px;
+    display: block;
+    font-size: 2.5em;
+    float: right;
+}
+
+header ul li a {
+    color: white;
+    text-decoration: none;
+    border: none;
+    background: none;
+}
+
+header ul li a:hover {
+    color: rgb(221, 221, 221);
+}
+
+header ul li a:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 4px;
+    bottom: 0;
+    left: 0;
+    background-color: #ffffff;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+  
+header ul li a:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+.svgHolder {
+    position: fixed;
+    top: 1%;
+    right: 1%;
+    height: 40px;
+    width: 40px;
+    transition: 0.4s;
+    cursor: pointer;
+}
+
+#sidebar {
+    display: none;
+    position: fixed;
+    top: 70px;
+    width: 40%;
+    height: 100%;
+    background-color: #161a1d;
+    right: -100%;
+    transition: 0.4s;
+    z-index: 1;
+}
+
+#sidebar div ul li {
+    list-style: none;
+    padding-top: 5%;
+    padding-left: 5%;
+}
+
+#sidebar div ul li a {
+    color: white;
+    text-decoration: underline;
+    border: none;
+    background: none;
+    font-size: 350%;
+}
+
+#topContainer {
+    width: 100%;
+    height: 92vh;
+    background-color: #1b1e20;
+    overflow: hidden;
+}
+
+#topContainer #text {
+    width: 40%;
+    height: 100%;
+    background-color: 232527;
+}
+
+#topContainer h2 {
+    padding-left: 10%;
+    padding-right: 30%;
+    padding-top: 15%;
+    font-size: 800%;
+    color: rgb(57, 223, 39);
+}
+
+#topContainer #text button {
+    position: relative;
+    left: 10%;
+    top: 5%;
+    width: 20%;
+    height: 5%;
+    border: solid;
+    border-color: white;
+    border-width: 3px;
+    background: none;
+    color: white;
+    font-size: 150%;
+    transition:all 0.3s ease;
+    box-shadow: #31322d 10px 10px 10px;
+}
+
+#topContainer #text button:hover {
+    position: relative;
+    left: 10%;
+    top: 5%;
+    width: 20%;
+    height: 5%;
+    border: solid;
+    border-color: rgb(81, 202, 70);
+    border-width: 3px;
+    background: none;
+    color: white;
+    font-size: 150%;
+    box-shadow: none;
+}
+
+#topContainer #image {
+    position: relative;
+    top: -100%;
+    left: 40%;
+    width: 60%;
+    height: 100%;
+    overflow: hidden;
+}
+
+#topContainer #image img {
+    width: 100%;
+    height: 100%;
+}
+
+#OverviewSect {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #1b1e20;
+    height: 40vh;
+    width: 100%;
+    justify-content: space-around;
+}
+
+#OverviewSect section {
+    margin: 40px 20px 0 20px;
+    text-align: center;
+}
+
+#OverviewSect section h2 {
+    font-size: 20px;
+    color: white;
+    margin-bottom: 10px;
+}
+
+#OverviewSect section p {
+    color: white;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+#OverviewSect section button {
+    width: 200px;
+    height: 40px;
+    text-align: center;
+    background: none;
+    font-size: 30px;
+    font-weight: bold;
+    border: solid;
+    border-color: white;
+    color: white;
+    transition: 0.4s;
+    box-shadow: #31322d 10px 10px 10px;
+    cursor: pointer;
+}
+
+#OverviewSect section button:hover {
+    box-shadow: none;
+    border-color: rgb(81, 202, 70);
+}
+
+#information {
+    text-align: center;
+    width: 100%;
+    height: 40vh;
+    background-color: #1b1e20;
+}
+
+#information h2 {
+    color: white;
+    font-size: 400%;
+    padding-top: 3%;
+    padding-left: 2%;
+}
+
+#information p {
+    color: white;
+    font-size: 200%;
+    padding-top: 3%;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+@media (max-width: 1200px) {
+    #topContainer #text {
+        width: 40%;
+    }
+
+    #topContainer h2 {
+        padding-right: 20%;
+        font-size: 700%;
+    }
+}
+
+@media (max-width: 960px) {
+    header ul {
+        display: none;
+    }
+
+    header h1 {
+        left: 10%;
+    }
+
+    #sidebar {
+        display: block;
+    }
+
+    #topContainer #text {
+        width: 60%;
+    }
+
+    #topContainer h2 {
+        padding-left: 10%;
+        padding-right: 8%;
+        padding-top: 15%;
+        font-size: 700%;
+    }
+
+    #topContainer #image {
+        left: 60%;
+    }
+}
+
+@media (max-width: 925px) {
+    #information {
+        padding-top: 20%;
+    }
+}
+
+@media (max-width: 670px) {
+    #topContainer {
+        height: 63vh;
+    }
+
+    #topContainer #text {
+        width: 100%;
+        background-color: #232527;
+    }
+
+    #topContainer h2 {
+        color: rgb(255, 255, 255);
+        padding-left: 10%;
+        padding-right: 30%;
+        padding-top: 15%;
+        font-size: 600%;
+    }
+
+    #topContainer #image {
+        display: none;
+        width: 0%;
+    }
+
+    #topContainer #text button {
+        font-weight: 1000;
+        background-color: #232527;
+    }
+
+    #topContainer #text button:hover {
+        border-color: white;
+        background-color: #43474b;
+    }
+
+    #sidebar {
+        width: 50%;
+    }
+}
+
+@media (max-width: 600px) {
+    #topContainer h2 {
+        padding-right: 39%;
+        font-size: 500%;
+    }
+}
+
+@media (max-width: 588px) {
+    #information {
+        padding-top: 70%;
+    }
+}
+
+@media (max-width: 455px) {
+    #information {
+        padding-top: 90%;
+    }
+}
+
+@media (max-width: 425px) {
+    #topContainer h2 {
+        padding-left: 10%;
+        padding-top: 30%;
+        padding-right: 40%;
+        font-size: 400%;
+    }
+
+    #sidebar {
+        width: 100%;
+    }
+
+    #information h2 {
+        font-size: 300%;
+    }
+
+    #information p {
+        padding-right: 10%;
+        padding-left: 10%;
+        font-size: 150%;
+    }
+}
+
+@media (max-width: 375px) {
+    #topContainer h2 {
+        padding-left: 10%;
+        padding-top: 40%;
+        padding-right: 33%;
+        font-size: 350%;
+    }
+
+    #topContainer #text button {
+        width: 40%;
+    }
+    
+    #information {
+        padding-top: 100%;
+    }
+}
+
+@media (max-width: 350px) {
+    #information {
+        padding-top: 130%;
+    }
+}
+
+@media (max-width: 325px) {
+    #topContainer h2 {
+        padding-right: 30%;
+    }
+}
