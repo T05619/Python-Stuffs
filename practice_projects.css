@@ -25,7 +25,7 @@
     flex-wrap: wrap;
     justify-content: space-around;
     width: 100%;
-    height: 100vh;
+    height: 100%;
     background-color: #1b1e20;
 }
 
@@ -71,17 +71,18 @@
     color: white;
 }
 
-@media (max-width: 960px) {
-    #introduction {
-        margin-bottom: 5%;
-    }
-}
-
 @media (max-width: 1286px) {
     #projects section {
         height: 400px;
     }
 }
+
+@media (max-width: 960px) {
+    #introduction {
+        margin-bottom: 10%;
+    }
+}
+
 
 @media (max-width: 768px) {
     .project-description {
@@ -97,15 +98,27 @@
     }
 }
 
+@media (max-width: 668px) {
+    #introduction {
+        margin-bottom: 20%;
+    }
+}
+
 @media (max-width: 600px) {
     #introduction {
         margin-bottom: 25%;
     }
 }
 
-@media (max-width: 470px) {
+@media (max-width: 555px) {
     #introduction {
         margin-bottom: 35%;
+    }
+}
+
+@media (max-width: 470px) {
+    #introduction {
+        margin-bottom: 45%;
     }
 }
 
@@ -138,9 +151,15 @@
     }
 }
 
-@media (max-width: 375px) {
+@media (max-width: 400px) {
     #introduction {
         margin-bottom: 65%;
+    }
+}
+
+@media (max-width: 375px) {
+    #introduction {
+        margin-bottom: 75%;
     }
 
     #introduction h2 {
@@ -150,13 +169,13 @@
 
 @media (max-width: 320px) {
     #introduction {
-        margin-bottom: 85%;
+        margin-bottom: 110%;
     }
 }
 
 @media (max-width: 288px) {
     #introduction {
-        margin-bottom: 70%;
+        margin-bottom: 80%;
     }
 
     #introduction h2 {
@@ -168,20 +187,14 @@
     }
 }
 
-@media (max-height:1190px) {
+@media (max-width: 278px) {
     #introduction {
-        margin-bottom: 65%;
+        margin-bottom: 90%;
     }
 }
 
-@media (max-height: 700px) {
+@media (max-width: 250px) {
     #introduction {
-        margin-bottom: 75%;
-    }
-}
-
-@media (max-height: 390px) {
-    #introduction {
-        margin-bottom: 85%;
+        margin-bottom: 110%;
     }
 }
