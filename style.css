@@ -88,7 +88,7 @@ header ul li a:after {
     transform-origin: bottom right;
     transition: transform 0.25s ease-out;
 }
-  
+ 
 header ul li a:hover:after {
     transform: scaleX(1);
     transform-origin: bottom left;
@@ -403,7 +403,7 @@ header ul li a:hover:after {
         height: 15%;
         margin-top: 15%
     }
-    
+   
     #information {
         padding-top: 140%;
     }
