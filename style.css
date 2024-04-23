@@ -400,6 +400,8 @@ header ul li a:hover:after {
 
     #topContainer #text button {
         width: 40%;
+        height: 20%;
+        top: 15%
     }
     
     #information {
