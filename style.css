@@ -84,7 +84,7 @@ header ul li a:after {
     height: 4px;
     bottom: 0;
     left: 0;
-    background-color: #ffffff;
+    background-color: #51ca46;
     transform-origin: bottom right;
     transition: transform 0.25s ease-out;
 }
@@ -148,7 +148,7 @@ header ul li a:hover:after {
     padding-right: 30%;
     padding-top: 15%;
     font-size: 800%;
-    color: rgb(57, 223, 39);
+    color: rgb(255, 255, 255);
 }
 
 #topContainer #text button {
@@ -174,7 +174,7 @@ header ul li a:hover:after {
     width: 20%;
     height: 5%;
     border: solid;
-    border-color: rgb(81, 202, 70);
+    border-color: #51ca46;
     border-width: 3px;
     background: none;
     color: white;
