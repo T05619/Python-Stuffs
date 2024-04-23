@@ -4,7 +4,7 @@
     color: white;
     width: 100%;
     height: 10vh;
-    margin-bottom: 25%;
+    margin-bottom: 1%;
     margin-top: 2%;
 }
 
@@ -35,7 +35,7 @@
     margin-left: 5%;
     margin-bottom: 5%;
     width: 500px;
-    height: 30%;
+    height: 325px;
     background-color: #161a1d;
     border: solid;
     border-color: white;
@@ -71,23 +71,25 @@
     color: white;
 }
 
+@media (max-width: 960px) {
+    #introduction {
+        margin-bottom: 5%;
+    }
+}
+
 @media (max-width: 1286px) {
     #projects section {
-        height: 40%;
+        height: 400px;
     }
 }
 
 @media (max-width: 990px) {
     #projects section {
-        height: 50%;
+        height: 400px;
     }
 }
 
 @media (max-width: 768px) {
-    #projects section {
-        height: 50%;
-    }
-
     .project-description {
         margin-top: 3%;
     }
@@ -95,41 +97,86 @@
     .requirements {
         margin-top: 5%;
     }
+
+    #introduction {
+        margin-bottom: 15%;
+    }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 600px) {
     #introduction {
-        margin-bottom: 45%;
+        margin-bottom: 25%;
+    }
+}
+
+@media (max-width: 470px) {
+    #introduction {
+        margin-bottom: 35%;
     }
 }
 
 @media (max-width: 425px) {
     #introduction {
-        margin-bottom: 70%;
+        margin-bottom: 50%;
     }
+
+    #projects section {
+        height: 400px;
+    }
+
+    .project-title {
+        font-size: 200%;
+    }
+
+    .project-description {
+        font-size: 150%;
+    }
+
+    .requirements {
+        font-size: 140%;
+    }
+
     .project-requirements-list {
         margin-top: 2%;
         margin-left: 8%;
         margin-right: 3%;
+        font-size: 125%;
+    }
+}
+
+@media (max-width: 375px) {
+    #introduction {
+        margin-bottom: 65%;
+    }
+
+    #introduction h2 {
+        font-size: 300%;
     }
 }
 
 @media (max-width: 320px) {
     #introduction {
-        margin-bottom: 115%;
+        margin-bottom: 85%;
+    }
+}
+
+@media (max-width: 288px) {
+    #introduction {
+        margin-bottom: 70%;
+    }
+
+    #introduction h2 {
+        font-size: 200%;
+    }
+
+    #introduction p {
+        font-size: 175%;
     }
 }
 
 @media (max-height: 850px) {
     #projects section {
         padding-bottom: 15%;
-    }
-}
-
-@media (max-width: 760px) {
-   
-    #projects section {
-        padding-bottom: 25%;
     }
 }
 
