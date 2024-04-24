@@ -114,6 +114,12 @@
     }
 }
 
+@media (max-width: 414px) {
+    .three-words {
+        font-size: 70%;
+    }
+}
+
 @media (max-width: 364px) {
     #past-papers-h {
         font-size: 350%;
