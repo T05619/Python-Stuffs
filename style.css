@@ -107,13 +107,20 @@ header ul li a:hover:after {
 #sidebar {
     display: none;
     position: fixed;
-    top: 70px;
+    top: 0%;
     width: 40%;
     height: 100%;
     background-color: #161a1d;
     right: -100%;
     transition: 0.4s;
     z-index: 1;
+}
+
+#sidebar div h2 {
+    margin-top: 18%;
+    margin-left: 5%;
+    color: white;
+    font-size: 350%;
 }
 
 #sidebar div ul li {
@@ -132,7 +139,7 @@ header ul li a:hover:after {
 
 #topContainer {
     width: 100%;
-    height: 92vh;
+    height: 1000px;
     background-color: #1b1e20;
     overflow: hidden;
 }
@@ -246,6 +253,7 @@ header ul li a:hover:after {
     text-align: center;
     width: 100%;
     height: 40vh;
+    margin-top: 10vh;
     background-color: #1b1e20;
 }
 
@@ -273,6 +281,11 @@ header ul li a:hover:after {
         padding-right: 20%;
         font-size: 700%;
     }
+
+    #topContainer #text button {
+        width: 40%;
+        height: 6%;
+    }
 }
 
 @media (max-width: 960px) {
@@ -288,31 +301,8 @@ header ul li a:hover:after {
         display: block;
     }
 
-    #topContainer #text {
-        width: 60%;
-    }
-
-    #topContainer h2 {
-        padding-left: 10%;
-        padding-right: 8%;
-        padding-top: 15%;
-        font-size: 700%;
-    }
-
-    #topContainer #image {
-        left: 60%;
-    }
-}
-
-@media (max-width: 925px) {
-    #information {
-        padding-top: 20%;
-    }
-}
-
-@media (max-width: 670px) {
     #topContainer {
-        height: 63vh;
+        height: 500px;
     }
 
     #topContainer #text {
@@ -323,7 +313,7 @@ header ul li a:hover:after {
     #topContainer h2 {
         color: rgb(255, 255, 255);
         padding-left: 10%;
-        padding-right: 30%;
+        padding-right: 10%;
         padding-top: 15%;
         font-size: 600%;
     }
@@ -336,6 +326,44 @@ header ul li a:hover:after {
     #topContainer #text button {
         font-weight: 1000;
         background-color: #232527;
+        width: 40%;
+        height: 10%;
+    }
+
+    #topContainer #text button:hover {
+        border-color: white;
+        background-color: #43474b;
+    }
+}
+
+@media (max-width: 670px) {
+    #topContainer {
+        height: 500px;
+    }
+
+    #topContainer #text {
+        width: 100%;
+        background-color: #232527;
+    }
+
+    #topContainer h2 {
+        color: rgb(255, 255, 255);
+        padding-left: 10%;
+        padding-right: 10%;
+        padding-top: 15%;
+        font-size: 600%;
+    }
+
+    #topContainer #image {
+        display: none;
+        width: 0%;
+    }
+
+    #topContainer #text button {
+        font-weight: 1000;
+        background-color: #232527;
+        width: 40%;
+        height: 10%;
     }
 
     #topContainer #text button:hover {
@@ -350,20 +378,13 @@ header ul li a:hover:after {
 
 @media (max-width: 600px) {
     #topContainer h2 {
-        padding-right: 39%;
+        padding-right: 15%;
         font-size: 500%;
     }
-}
 
-@media (max-width: 588px) {
-    #information {
-        padding-top: 70%;
-    }
-}
-
-@media (max-width: 455px) {
-    #information {
-        padding-top: 90%;
+    #topContainer #text button {
+        width: 40%;
+        height: 10%;
     }
 }
 
@@ -371,7 +392,7 @@ header ul li a:hover:after {
     #topContainer h2 {
         padding-left: 10%;
         padding-top: 30%;
-        padding-right: 40%;
+        padding-right: 20%;
         font-size: 400%;
     }
 
@@ -388,30 +409,25 @@ header ul li a:hover:after {
         padding-left: 10%;
         font-size: 150%;
     }
+
+    #topContainer #text button {
+        width: 40%;
+        height: 10%;
+    }
 }
 
 @media (max-width: 415px) {
     #topContainer h2 {
         padding-left: 10%;
         padding-top: 40%;
-        padding-right: 33%;
+        padding-right: 25%;
         font-size: 350%;
     }
 
     #topContainer #text button {
-        width: 40%;
-        height: 15%;
+        width: 30%;
+        height: 10%;
         margin-top: 15%
-    }
-   
-    #information {
-        padding-top: 140%;
-    }
-}
-
-@media (max-width: 350px) {
-    #information {
-        padding-top: 150%;
     }
 }
 
