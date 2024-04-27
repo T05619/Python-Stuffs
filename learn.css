@@ -1,0 +1,292 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+#backButton {
+    display: none;
+    position: relative;
+    top: -10.5rem;
+    float: right;
+    width: 80px;
+    height: 60px;
+    cursor: pointer;
+}
+
+header svg {
+    position: relative;
+    top: 1rem;
+    right: 2rem;
+    float: right;
+}
+
+#learn-info {
+    color: white;
+    width: 95%;
+    height: 100%;
+    padding-left: 5%;
+    padding-top: 3%;
+}
+
+#learn-h {
+    font-size: 400%;
+    margin-bottom: 1%;
+}
+
+#learn-p {
+    font-size: 200%;
+    margin-right: 5%;
+}
+
+#lessons {
+    margin-top: 3%;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+
+#lessons-title-main {
+    color: white;
+    font-size: 400%;
+    margin-bottom: 2%;
+}
+
+.lesson-div {
+    width: 90%;
+    margin-right: 5%;
+    margin-left: 5%;
+    height: 40px;
+    background-color: #1b1e20;
+    border: solid;
+    border-color: white;
+    border-width: 2px;
+    margin-bottom: 1%;
+}
+
+.lesson-div p {
+    margin-top: 0.25%;
+    margin-left: 1%;
+    float: left;
+    color: white;
+    font-size: 240%;
+    font-weight: 800;
+}
+
+.lesson-div button {
+    float: right;
+    margin-top: 0.15%;
+    margin-right: 1%;
+    font-size: 240%;
+    width: 150px;
+    border: solid;
+    border-color: white;
+    background-color: #1b1e20;
+    cursor: pointer;
+}
+
+.lesson-div button a {
+    text-decoration: none;
+    color: white;
+}
+
+#lesson-stuff {
+    display: none;
+    width: 100%;
+    text-align: center;
+}
+
+#info-box {
+    text-align: left;
+    width: 40%;
+    position: relative;
+    left: 30%;
+    height: 100%;
+    border: solid;
+    border-color: white;
+    border-width: 2px;
+    border-radius: 3px;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    margin-top: 25px;
+    background-color: #1b1e20;
+}
+
+#info-box p {
+    color: white;
+    font-size: 200%;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 5px;
+}
+
+#lesson-stuff h2 {
+    position: relative;
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: white;
+    font-size: 300%;
+}
+
+.continueButton {
+    text-align: center;
+    width: 300px;
+    height: 50px;
+    color: white;
+    border: solid;
+    border-color: white;
+    background-color: #1b1e20;
+    border-width: 2px;
+    font-size: 200%;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.QuizBox {
+    display: none;
+    width: 40%;
+    position: relative;
+    left: 30%;
+    height: 100%;
+    border: solid;
+    border-color: white;
+    border-width: 2px;
+    border-radius: 3px;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    margin-top: 25px;
+    background-color: #1b1e20;
+    text-align: center;
+}
+
+.QuizQuestion {
+    color: white;
+    font-size: 200%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.QuizAnswer {
+    display: none;
+    color: white;
+    font-size: 200%;
+    margin-bottom: 5px;
+}
+
+.QuizinputBox {
+    border: none;
+    font-size: 200%;
+    text-align: center;
+    border-radius: 3px;
+    margin-bottom: 5px;
+}
+
+#Completion-info {
+    display: none;
+    text-align: center;
+    width: 40%;
+    position: relative;
+    left: 30%;
+    height: 100%;
+    border: solid;
+    border-color: white;
+    border-width: 2px;
+    border-radius: 3px;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    margin-top: 25px;
+    background-color: #1b1e20;
+}
+
+#completion-info-p {
+    color: white;
+    font-size: 200%;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 5px;
+}
+
+#completion-button {
+    display: none;
+    text-align: center;
+    width: 300px;
+    height: 50px;
+    color: white;
+    border: solid;
+    border-color: white;
+    background-color: #1b1e20;
+    border-width: 2px;
+    font-size: 200%;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+@media (max-width: 900px) {
+    #info-box {
+        left: 0.75%;
+        width: 98%;
+    }
+
+    #Completion-info {
+        left: 0.75%;
+        width: 98%;
+    }
+
+    .QuizBox {
+        left: 0.75%;
+        width: 98%;
+    }
+}
+
+@media (max-width: 594px) {
+    .lesson-div button {
+        margin-top: 0.5%;
+    }
+}
+
+@media (max-width: 570px) {
+    .smaller p {
+        margin-top: 1.9%;
+        margin-left: 2%;
+        font-size: 175%;
+    }
+}
+
+@media (max-width: 400px) {
+    #info-box p {
+        font-size: 150%;
+    }
+
+    .continueButton {
+        width: 150px;
+        height: 50px;
+    }
+
+    #completion-info-p {
+        font-size: 150%;
+    }
+
+    #completion-button {
+        width: 150px;
+        height: 50px;
+    }
+}
+
+@media (max-width: 394px) {
+    .lesson-div p {
+        margin-top: 1.9%;
+        margin-left: 2%;
+        font-size: 190%;
+    }
+
+    .smaller p{
+        margin-top: 3.2%;
+        margin-left: 2%;
+        font-size: 150%;
+    }
+
+    .lesson-div button {
+        font-size: 180%;
+        margin-top: 2%;
+        margin-right: 2%;
+        width: 100px;
+    }
+}
