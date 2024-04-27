@@ -5,14 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Python Stuffs</title>
     <script src="style.js"></script>
+    <script src="learn-lesson.js"></script>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="learn.css">
 </head>
 <body>
     <header>
         <div>
             <h1>Python Stuffs</h1>
         </div>
-        <ul>
+        <ul id="list">
             <li><a href="past_papers.html">Past Papers</a></li>
             <li><span></span></li>
             <li><a href="practice_projects.html">Practice Projects</a></li>
@@ -21,6 +23,11 @@
             <li><span></span></li>
             <li><a href="index.html">Home</a></li>
         </ul>
+        <div id="backButton" onclick="back()">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" height="40px" class="w-6 h-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M9 15 3 9m0 0 6-6M3 9h12a6 6 0 0 1 0 12h-3" />
+            </svg>
+        </div>
     </header>
     <main>
         <div id="sidebar">
@@ -30,17 +37,116 @@
                 </svg>
             </div>
             <div>
+                <h2>Python Stuffs</h2>
                 <ul>
-                    <li><a href="past_papers.html">Past Papers</a></li>
+                    <li><a href="#">Home</a></li>
+                    <li><span></span></li>
+                    <li><a href="learn.html">Learn</a></li>
                     <li><span></span></li>
                     <li><a href="practice_projects.html">Practice Projects</a></li>
                     <li><span></span></li>
-                    <li><a href="#">Learn</a></li>
-                    <li><span></span></li>
-                    <li><a href="index.html">Home</a></li>
+                    <li><a href="past_papers.html">Past Papers</a></li>
                 </ul>
             </div>
         </div>
+        <section id="learn-info">
+            <p id="learn-h">Learn</p>
+            <p id="learn-p">This is where you can go through lessons to learn how each part of python works so that once your ready you can try tackle some practice projects then past papers!</p>
+        </section>
+        <section id="lessons">
+            <p id="lessons-title-main">Lessons</p>
+            <ul>
+                <li>
+                    <div class="lesson-div">
+                        <p>Data Types</p>
+                        <button class="lessons-button" onclick="setupLesson('Data Types')">
+                            <a href="#">Learn</a>
+                        </button>
+                    </div>
+                </li>
+                <li>
+                    <div class="lesson-div">
+                        <p>Variables</p>
+                        <button class="lessons-button" onclick="setupLesson('Variables')">
+                            <a href="#">Learn</a>
+                        </button>
+                    </div>
+                </li>
+                <li>
+                    <div class="lesson-div">
+                        <p>Printing</p>
+                        <button class="lessons-button" onclick="setupLesson('Printing')">
+                            <a href="#">Learn</a>
+                        </button>
+                    </div>
+                </li>
+                <li>
+                    <div class="lesson-div">
+                        <p>Maths</p>
+                        <button class="lessons-button" onclick="setupLesson('Maths')">
+                            <a href="#">Learn</a>
+                        </button>
+                    </div>
+                </li>
+                <li style="display: none;">
+                    <div class="lesson-div smaller">
+                        <p>Maths With Variables</p>
+                        <button class="lessons-button" onclick="setupLesson('Maths With Variables')">
+                            <a href="#">Learn</a>
+                        </button>
+                    </div>
+                </li>
+            </ul>
+        </section>
+        <section id="lesson-stuff">
+            <div>
+                <h2 id="lesson-h">Lesson Name</h2>
+            </div>
+            <div id="info-box">
+                <p id="info-box-p">Info</p>
+            </div>
+            <button class="continueButton" onclick="ContinueTofirstQuestion()" id="firstContinue">Continue</button>
+            <div id="quiz-box-1" class="QuizBox">
+                <p id="quiz-q-1" class="QuizQuestion">question</p>
+                <p id="quiz-answer-1" class="QuizAnswer">answer</p>
+                <input id="quiz-in-1" class="QuizinputBox" type="Text" autocomplete="off">
+            </div>
+            <button class="continueButton" onclick="continueToSecondQuestion()" id="secondContinue">Continue</button>
+            <div id="quiz-box-2" class="QuizBox">
+                <p id="quiz-q-2" class="QuizQuestion">question</p>
+                <p id="quiz-answer-2" class="QuizAnswer">answer</p>
+                <input id="quiz-in-2" class="QuizinputBox" type="Text" autocomplete="off">
+            </div>
+            <button class="continueButton" onclick="continueToThirdQuestion()" id="thirdContinue">Continue</button>
+            <div id="quiz-box-3" class="QuizBox">
+                <p id="quiz-q-3" class="QuizQuestion">question</p>
+                <p id="quiz-answer-3" class="QuizAnswer">answer</p>
+                <input id="quiz-in-3" class="QuizinputBox" type="Text" autocomplete="off">
+            </div>
+            <button class="continueButton" onclick="continueToGiveAnExampleOne()" id="fourthContinue">Continue</button>
+            <div id="quiz-box-4" class="QuizBox">
+                <p id="quiz-q-4" class="QuizQuestion">question</p>
+                <p id="quiz-answer-4" class="QuizAnswer">answer</p>
+                <input id="quiz-in-4" class="QuizinputBox" type="Text" autocomplete="off">
+            </div>
+            <button class="continueButton" onclick="continueToGiveAnExampleTwo()" id="fifthContinue">Continue</button>
+            <div id="quiz-box-5" class="QuizBox">
+                <p id="quiz-q-5" class="QuizQuestion">question</p>
+                <p id="quiz-answer-5" class="QuizAnswer">answer</p>
+                <input id="quiz-in-5" class="QuizinputBox" type="Text" autocomplete="off">
+            </div>
+            <button class="continueButton" onclick="continueToGiveAnExampleThree()" id="sixthContinue">Continue</button>
+            <div id="quiz-box-6" class="QuizBox">
+                <p id="quiz-q-6" class="QuizQuestion">question</p>
+                <p id="quiz-answer-6" class="QuizAnswer">answer</p>
+                <input id="quiz-in-6" class="QuizinputBox" type="Text" autocomplete="off">
+            </div>
+            <button class="continueButton" onclick="continueToFinish()" id="seventhContinue">Continue</button>
+            <div id="Completion-info">
+                <p id="completion-info-p">Well Done! It looks like you've mastered this topic!</p>
+            </div>
+            <button id="completion-button" onclick="back()">Return To Lessons List</button>
+        </section>
     </main>
 </body>
 </html>
