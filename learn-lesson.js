@@ -10,28 +10,28 @@ let lessonToinfoBoxP = {
 let lessonToQuestion = {
     "Data Types": ['What data type is this: <br> "Steven"', 'What data type is this: <br> "Giraffes are 30 times more likely to get hit by lightning than people."', 'What data type is this: <br> "E"', "What data type is this: <br> 14890", "What data type is this: <br> 8595.2", "What data type is this: <br> False", "What data type is this: <br> True"],
     "Variables": ['What is the value of "name"?<br>name = "Steve"', 'What is the value of "number"?<br>number = 64', 'What is the name of the variable?<br>myVariable = "cool fact here"', 'What is the name of the variable?<br>steve = "not old"', 'What is the data type of "name"?<br>name = "Steve"', 'What is the data type of "coolvariable"?<br>coolvariable = 64', 'What is the data type of "arrow"?<br>arrow = True'],
-    "Printing": ['What does this output:<br>print("Daniel")', 'What does this output:<br>print(5)', 'What does this output:<br>print(false)', 'What does this output:<br>print("Im cool")', 'What does this output:<br>print(True)'],
+    "Printing": ['What does this output:<br>print("Daniel")', 'What does this output:<br>print(5)', 'What does this output:<br>print(False)', 'What does this output:<br>print("Im cool")', 'What does this output:<br>print(True)'],
     "Maths": ['Declare a variable called "num" and set it equal to 1 + 1', 'Declare a variable called "num" and set it equal to 16 / 4', 'Declare a variable called "num" and set it equal to 4 * 7', 'Declare a variable called "num" and set it equal to 100 - 10']
 }
 
 let lessonToAnswer = {
     "Data Types": ["string", "string", "character", "integer", "float", "boolean", "boolean"],
     "Variables": ["steve", "64", "myvariable", "steve", "string", "integer", "boolean"],
-    "Printing": ["Daniel", "5", "false", "Im cool", "True"],
+    "Printing": ["Daniel", "5", "False", "Im cool", "True"],
     "Maths": ['num = 1 + 1', 'num = 16 /4', 'num = 4 * 7', 'num = 100 - 10']
 }
 
 let giveAnExapleQuestions = {
     "Data Types": ["Write 'Hello World' as a string", "Write '5' as a integer", "Write '5' as a float", "Write 'c' as a character", "Write false as a boolean"],
-    "Variables": ['Declare a variable called "myVariable" which equals "isCool"','Declare a variable called "trolleys" which equals "8"', 'Declare a variable called "slices" which equals "12.5"', 'Declare a variable called "friends" which equals "10"', 'Declare a variable called "cool" which equals "True"', 'Declare a variable called "fileName" which equals "NotAVirus.exe"'],
+    "Variables": ['Declare a variable called "myVariable" which equals "isCool"','Declare a variable called "trolleys" which equals "8"', 'Declare a variable called "slices" which equals "12.5"', 'Declare a variable called "friends" which equals "10"', 'Declare a variable called "cool" which equals "True"', 'Declare a variable called "file" which equals "NotAVirus.exe"'],
     "Printing": ['What comes before this:<br>("I am being printed")', 'Fix this statment:<br>print(Im not a odd person)', 'Fix this statment:<br>PRINT("I should be revising', 'Print the variable:<br>num = 78', 'Print the variable:<br>cool = True', 'Print the variable:<br>float = 14.4'],
     "Maths": ['Print 5 multiplied by 5', 'Print 9 divided by 3', 'Print 8 add 2', 'Print 10 subtract 4', 'Declare a variable called "num" and set it equal to 5 + 5 + 5']
 }
 
 let giveAnExapleAnswers = {
     "Data Types": ['"hello world"', "5", "5.0", '"c"', "false"],
-    "Variables": ['myVariable = "isCool"', 'trolleys = 8', 'slices = 12.5', 'friends = 10', 'cool = true', 'file = "notavirus.exe"'],
-    "Printing": ['print', 'print("Im not a odd person")', 'print("I should be revising")', 'print(num)', 'print(cool)', 'print(float)'],
+    "Variables": ['myvariable = "iscool"', 'trolleys = 8', 'slices = 12.5', 'friends = 10', 'cool = true', 'file = "notavirus.exe"'],
+    "Printing": ['print', 'print("im not a odd person")', 'print("i should be revising")', 'print(num)', 'print(cool)', 'print(float)'],
     "Maths": ['print(5 * 5)', 'print(9 / 3)', 'print(8 + 2)', 'print(10 - 4)', 'num = 5 + 5 + 5']
 }
 
@@ -221,6 +221,8 @@ function continueToGiveAnExampleOne() {
     let question = listOfQuestions[randomNumber];
     let answer = listOfAnswers[randomNumber];
 
+    console.log(answer)
+
     document.getElementById("quiz-q-4").innerHTML = question;
 
     document.getElementById("quiz-in-4").addEventListener('input', function() {
@@ -263,6 +265,8 @@ function continueToGiveAnExampleTwo() {
 
     let question = listOfQuestions[randomNumber];
     let answer = listOfAnswers[randomNumber];
+
+    console.log(answer)
 
     document.getElementById("quiz-q-5").innerHTML = question;
 
@@ -313,6 +317,8 @@ function continueToGiveAnExampleThree() {
     let question = listOfQuestions[randomNumber];
     let answer = listOfAnswers[randomNumber];
 
+    console.log(answer)
+    
     document.getElementById("quiz-q-6").innerHTML = question;
 
     document.getElementById("quiz-in-6").addEventListener('input', function() {
